@@ -85,5 +85,6 @@
        -moz-border-radius: 5px;
     -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
        -moz-box-shadow: black 5px 5px 5px;
+       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
