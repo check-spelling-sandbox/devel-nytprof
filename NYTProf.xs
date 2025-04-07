@@ -166,7 +166,7 @@ gv_fetchfile_flags(pTHX_ const char *const name, const STRLEN namelen, const U32
  * during profiling but we should really output ticks so the reporting side
  * can also be more accurate when merging subs, for example.
  * That'll probably need a file format bump and thus also a major version bump.
- * Will need coresponding changes to NYTP_SIi_* as well.
+ * Will need corresponding changes to NYTP_SIi_* as well.
  */
 #define NYTP_SCi_CALL_COUNT      0   /* count of calls to sub */    
 #define NYTP_SCi_INCL_RTIME      1   /* inclusive real time in sub (set from NYTP_SCi_INCL_TICKS) */
@@ -2193,7 +2193,7 @@ incr_sub_inclusive_time(pTHX_ subr_entry_t *subr_entry)
                     * because CvFILE() isn't reliable on perl 5.8.[78]
                     * and the name of the .c file isn't very useful anyway.
                     * The reader can try to associate the xsubs with the
-                    * corresonding .pm file using the package part of the subname.
+                    * corresponding .pm file using the package part of the subname.
                     */
                 SV *sv = *hv_fetch(GvHV(PL_DBsub), called_subname_pv, (I32)(called_subname_pv_end - called_subname_pv), 1);
                 if (!SvOK(sv))
@@ -3357,7 +3357,7 @@ pkg_name_len(pTHX_ char *sub_name, I32 len)
 
 /* Given a fully-qualified sub_name lookup the package name portion in
  * the pkg_fids_hv hash.  Return Nullsv if there's no package name or no
- * correponding entry, else returns the SV.
+ * corresponding entry, else returns the SV.
  *
  * About pkg_fids_hv:
  * pp_subcall_profiler() creates undef entries for a package
