@@ -5037,7 +5037,7 @@ load_profile_to_hv(pTHX_ NYTP_file in)
    "Timers, Timer Resolution, and Development of Efficient Code". So for short
    programs profiler_duration winds up being 0. If necessery, in the future
    profiler_duration could be set to 15.625 ms automatically on NYTProf start
-   because of the argument that a process can not execute in 0 ms according to
+   because of the argument that a process cannot execute in 0 ms according to
    the laws of space and time, or at "the end" if profiler_duration is 0.0, set
    it to 15.625 ms*/
 #ifdef HAS_QPC
