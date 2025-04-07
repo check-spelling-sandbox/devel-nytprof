@@ -73,7 +73,7 @@ In L<GH 192: nytprofhtml - internal anchor links in html pages go to wrong
 locations|https://github.com/timbunce/devel-nytprof/issues/192> Shawn Laffan
 reported that internal links to anchors in the generated HTML pages were not
 correctly positioned in the vertical dimension.   Discontinuing use of this
-Javascript file appears to correct the problem.
+JavaScript file appears to correct the problem.
 
 =head2 Changes in Devel::NYTProf 6.10 - 9th May 2021
 
@@ -275,7 +275,7 @@ in an older pull request.
   Fix for the double opening of the web browser with --open,
     thanks to trizen #107
 
-  Updated links in docs from old svn repository to Github
+  Updated links in docs from old svn repository to GitHub
     thanks to smpeters #114
 
 =head2 Changes in Devel::NYTProf 6.04 - 24th November 2016
@@ -286,7 +286,7 @@ in an older pull request.
     Fixed spelling mistake in nytprofcsv docs. Closes #95
 
     Table headers now stay visible, thanks to Sebastian Rose #106
-    Assorted improvments to .travis.yml
+    Assorted improvements to .travis.yml
 
 =head2 Changes in Devel::NYTProf 6.03 - 25th March 2016
 
@@ -547,7 +547,7 @@ in an older pull request.
 Major changes:
 
   Added profile reporting of code executed in string evals.
-    Each string eval executed gets it's own report page.
+    Each string eval executed gets its own report page.
     You can 'see' the code that was executed, with profile info.
     String evals may be collapsed/merged in some cases.
 
@@ -658,7 +658,7 @@ Documentation Changes:
     perl opcodes (e.g., system calls and regexs). They're treated like xsubs.
     slowops=0 disables profiling of 'slowops'
     slowops=1 puts timings into one package ("CORE::", eg CORE::sleep)
-    slowops=2 (the default) puts timings into into the package that made the
+    slowops=2 (the default) puts timings into the package that made the
     call, e.g., "Foo::CORE:sleep" (note the single colon).
 
   Added sigexit=1 option to enable a useable profile when the process
@@ -935,7 +935,7 @@ Other:
     - Fixes major issues with profiling code that forks.
 
   1.13  Wed Mar 26 9:35:00 2008
-    - Fixed RedHat EL bug - %f isn't the C format for floating-point for RHEL
+    - Fixed Red Hat EL bug - %f isn't the C format for floating-point for RHEL
         Changed Reader.pm to warn-and-continue instead of dieing when a source 
         file cannot be found. (the file will be skipped). Feature by request.
         Makefile.PL changes by tim.bunce - fix warning on LICENSE key when 
@@ -981,7 +981,7 @@ Other:
 
   0.03  Thu Mar 6 09:12:00 2008
     - Fixed a VERY tricky bug some people had encountered. Scalar references to 
-        code that is evaled at runtime will cause divide-by-zero error IF the
+        code that is evaluated at runtime will cause divide-by-zero error IF the
         reference was declared in a BEGIN {...} and used outside of a BEGIN. 
         (The debugger/profiler can't see what happens in a BEGIN)
     - Added test case for above issue as test11
