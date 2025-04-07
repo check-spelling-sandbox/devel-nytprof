@@ -890,7 +890,7 @@ fid_is_pmc(pTHX_ fid_hash_entry *fid_info)
                '\0', so it is safe to pass file_name to a system call.  */
             if (PerlLIO_lstat(file_name, &pmstat) < 0 ||
             pmstat.st_mtime < pmcstat.st_mtime) {
-                is_pmc = 1; /* hey, maybe it's Larry working on the perl6 comiler */
+                is_pmc = 1; /* hey, maybe it's Larry working on the perl6 compiler */
             }
         }
         SvREFCNT_dec(pmcsv);
